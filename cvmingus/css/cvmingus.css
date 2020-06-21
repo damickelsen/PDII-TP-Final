@@ -1,0 +1,404 @@
+/* || Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Josefin+Slab:wght@400;700&display=swap');
+
+/* || General Styles */
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+	margin-bottom: 0;
+	color: #ffffff;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 0 0 1em 0;
+	color: #ffffff;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 1em 0 0.4em 0;
+	color: #ffffff;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+nav {
+	width: 94%;
+	margin: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	color: #4f80ef;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+/* || Sitewide */
+
+.wrapper {
+	max-width: 950px;
+	margin: auto;
+	background-color: #000000;
+}
+
+.flex {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.container {
+	margin-bottom: 1em;
+	border-radius: 0.2em;
+	padding: 0.7em;
+	background-color: #ffffff;
+	font-family: "Josefin Slab", serif;
+}
+
+.attribute-value {
+	color: #fda505;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+/* || Header */
+
+header {
+	/* width: 100%;
+  height: 50vh;
+  background-image: url(img/Charles_Mingus_Band_Ture_Sjolander.jpg) */
+	background-color: #000000;
+	text-align: center;
+}
+
+.hero {
+	display: none;
+}
+
+/* || Nav */
+
+.header-nav {
+	order: 1;
+}
+
+.header-nav ul li {
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: #ffffff;
+	padding: .3em;
+}
+
+.header-nav ul li a {
+	display: block;
+	color: #ffffff;
+	font-size: 0.8em;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* || Main */
+
+main {
+	width: 94%;
+	margin: auto;
+}
+
+/* || Skills */
+
+.skills-left {
+	padding-bottom: 1em;
+}
+
+.skill-container {
+	flex-flow: wrap;
+	font-weight: bold;
+}
+
+.skill {
+	width: 50%;
+}
+
+/* || Experience */
+
+.experience-item-container .description {
+	padding-bottom: 0.5em;
+}
+
+/* || Projects */
+
+.projects-item-container {
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1em;
+}
+
+.projects-item-container .artwork {
+	width: calc(33% - 1em);
+}
+
+.projects-item-container .meta {
+	width: 67%;
+	padding-left: 1em;
+}
+
+.projects-item-container .meta .title {
+	font-size: 0.9em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.projects-item-container .meta .label {
+	padding-top: 0.2em;
+	font-size: 0.7em;
+}
+
+.projects-item-container .meta .year {
+	padding-top: 0.2em;
+	font-size: 0.8em;
+}
+
+/* || Awards & Honors */
+
+.awards-item-container .description {
+	padding-bottom: 0.5em;
+}
+
+/* || Footer */
+
+footer {
+	margin-top: 6em;
+	padding: 3em 0;
+	background-color: #ffffff;
+}
+
+.footer-nav {
+	padding-bottom: 1em;
+}
+
+.footer-nav ul li a {
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+footer .legal {
+	width: 94%;
+	margin: auto;
+	font-size: 0.8em;
+}
+
+/* || Media Query @@ 600 */
+
+@media all and (min-width: 600px) {
+
+	/* @@ General Styles */
+
+	h1 {
+		color: #000000;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+	h2 {
+		margin-bottom: 0;
+		color: #000000;
+		font-size: 1.1em;
+		font-weight: normal;
+	}
+
+	/* @@ Header */
+
+	header {
+		position: relative;
+		width: 100%;
+	}
+
+	.hero {
+		position: relative;
+		display: inline-block;
+		width: 100vw;
+	}
+
+	/* @@ Nav */
+
+	.header-nav {
+		position: absolute;
+		top: 0.7em;
+		left: 3%;
+		order: initial;
+	}
+
+	.header-nav ul {
+		flex-flow: wrap;
+		justify-content: space-between;
+	}
+
+	.header-nav ul li {
+		border: none;
+		padding: none;
+	}
+
+	.header-nav ul li a {
+		display: block;
+		color: #ffffff;
+		font-weight: normal;
+		text-decoration: none;
+	}
+
+	/* @@ Presentation Container */
+
+	.presentation-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+		width: 40%;
+		padding: 0.7em;
+		background-color: #ffffff;
+	}
+
+	.presentation-container img {
+		width: 100%;
+	}
+
+	hgroup {
+		padding: 1em 0;
+	}
+
+	/* @@ Skills */
+
+	.skills-container {
+		flex-flow: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.skills-left,
+	.skills-right {
+		width: 45%;
+	}
+
+	.skills-left {
+		padding: 0;
+	}
+
+	.skill-container {
+		flex-flow: wrap;
+		font-weight: bold;
+	}
+
+	/* @@ Education */
+
+	#education {
+		max-width: 20;
+		margin: auto;
+	}
+
+	.education-item-container {
+		text-align: center;
+	}
+
+	/* @@ Experience */
+
+	.experience-item-container {
+		flex-flow: wrap;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 1em;
+	}
+
+	.experience-item-container .description {
+		width: 70%;
+		padding: 0 5em 0 0;
+	}
+
+	/* @@ Projects */
+
+	.projects-item-container {
+		flex-flow: wrap;
+		align-items: auto;
+		justify-content: flex-start;
+		padding-bottom: 1em;
+	}
+
+	.projects-item-container .artwork {
+		width: calc(15% - 1em);
+	}
+
+	.projects-item-container .meta {
+		flex-flow: wrap;
+		width: 67%;
+		padding-left: 1em;
+	}
+
+	/* .projects-item-container .meta-item {
+		width: 33%;
+	}*/
+
+	.projects-item-container .meta .title {
+		width: 50%;
+		padding: 0 2em 0 0;
+		font-size: 0.9em;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	.projects-item-container .meta .label {
+		width: 30%;
+		padding: 0 2em 0 0;
+		font-size: 0.7em;
+	}
+
+	.projects-item-container .meta .year {
+		padding: 0;
+		font-size: 0.8em;
+	}
+
+	/* @@ Awards & Honors */
+
+	.awards-item-container {
+		flex-flow: wrap;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 1em;
+	}
+
+	.awards-item-container .description {
+		width: 70%;
+		padding: 0 5em 0 0;
+	}
+
+	/* @@ Footer */
+
+	.footer-nav ul {
+		flex-flow: wrap;
+		justify-content: space-between;
+	}
+
+	/* || Media Query @@ 1000 */
+
+	@media all and (min-width: 970px) {
+		.wrapper {
+			margin: 3em auto;
+			border-radius: 0.3rem;
+		}
+	}

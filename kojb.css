@@ -352,7 +352,7 @@ video-container img {
 	text-align: center;
 }
 
-form {
+.form-container {
 	max-width: 400px;
 	margin: auto;
 }
